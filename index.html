@@ -85,7 +85,7 @@
                   <div>
                     <img style="width:35%; margin-top: 20px" src="/media/simpleTalkmailFull.png" alt="simple talk-mail">
                     <div>
-                      <small>You have selected simple TalkMail. <span style="color:blue">Change</span></small>
+                      <small>You have selected simple TalkMail. <span style="color:blue;cursor:pointer" onclick="showHide(id={hide:'modal-content',show:'modal-talk-mail-type'})">Change</span></small>
                     </div>
                   </div>
                   <!-- <p>ASK FOR MIC/CAMERA PERMISSION HERE IF NOT SET AT TIME OF INSTALL</p> -->
@@ -146,7 +146,7 @@
                 <div class="camera-permission">
                   <h1>Select Record Type</h1>
                   <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small>
-                  <div style="display:flex;margin-top:50px">
+                  <div style="display:flex;margin-top:50px;margin-left:100px">
                     <div style="margin-left:40px; margin-right:10px">
                       <img id="video-active" onclick="videoActive()" style="width:100%; cursor:pointer" src="/media/video.png" alt="talk-mail type">
                       <img id="video-inactive" onclick="videoInactive()" style="width:100%;display:none; cursor:pointer" src="/media/videoOff.png" alt="talk-mail type">
@@ -157,10 +157,10 @@
                       <img id="audio-inactive" onclick="audioInactive()" style="width:100%;display:none; cursor:pointer" src="/media/audioOff.png" alt="talk-mail type">
                     </div>
                     
-                    <div style="margin-right:40px">
+                    <!-- <div style="margin-right:40px">
                       <img id="screenshare-active" onclick="screenShareActive()" style="width:100%; cursor:pointer" src="/media/screenshare.png" alt="talk-mail type">
                       <img id="screenshare-inactive" onclick="screenShareInactive()" style="width:100%;display:none; cursor:pointer" src="/media/screenShareOff.png" alt="talk-mail type">
-                    </div>
+                    </div> -->
                   </div>
                   <div style="margin-top: -400px; margin-left: 629px" class="cross">
                     <i class="fas fa-times"></i>
@@ -173,7 +173,7 @@
           </div>
       </div>
 
-        <!-- Modal Branding -->
+        <!-- Modal Branding (Branding Style)-->
         <div style="display:none"class="modal-content branding">
           <div class="">
                 <div class="camera-permission">
@@ -182,8 +182,9 @@
                   <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
                     <div style="display:flex; margin-left:200px">
                       <h4>Branding Style</h4>
-                      <h4 style="color:lightgray;margin-left:10px">Branding Assets</h4>
+                      <h4 style="color:lightgray;margin-left:10px;cursor:pointer" onclick="showHide(id={hide:'branding',show:'branding-assets'})">Branding Assets</h4>
                     </div>
+                    <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid">
                     <div style="display:flex;margin-top:50px">
                     <div style="margin-left:40px; margin-right:10px">
                       <img style="width:100%;cursor:pointer" src="/media/noBranding.png" alt="talk-mail type">
@@ -201,6 +202,81 @@
                   </div>
                   </div>
                   
+                  <div style="margin-top: -415px; margin-left: 629px" class="cross">
+                    <i class="fas fa-times"></i>
+                </div>
+                <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingCancelToFirstSection()">Cancel</button> -->
+                <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding',show:'first-section'})">Cancel</button>
+                <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingSaveToFirstSection()">Save</button> -->
+                <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding',show:'first-section'})">Save</button>
+                </div>
+          </div>
+      </div>
+
+        <!-- Modal Branding (Branding Assets)-->
+        <div style="display:none"class="modal-content branding-assets">
+          <div class="">
+                <div class="camera-permission">
+                  <h1>Branding</h1>
+                  <!-- <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small> -->
+                  <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
+                    <div style="display:flex; margin-left:200px">
+                      <h4 style="color:lightgray;margin-right:10px;cursor:pointer" onclick="showHide(id={hide:'branding-assets',show:'branding'})">Branding Style</h4>
+                      <h4>Branding Assets</h4>
+                    </div>
+                    <hr style="width:50px;margin-left:350px;margin-top:-10px;border:1px solid">
+
+                    <div style="display:flex;margin-top:50px">
+                      <img style="height:235px;margin-top:-40px;margin-left:70px" src="./media/branding-assets/Rectangle-407.png" alt="">
+                      <h2 style="margin-left:90px;position:absolute;color:white">Create new brand</h2>
+                      <h2 style="margin-left:90px;margin-top:50px;position:absolute;color:white">assets</h2>
+                      <img style="position:absolute;margin-left:160px;margin-top:100px;width:60px" src="./media/branding-assets/brush.png" alt="">
+
+                      <div style="background-color:white;width:270px;height:235px;margin-left:-80px;margin-top:-40px;border-radius: 25px;">
+
+                        <div style="margin-left:-130px;margin-top:20px">
+                          <img style="margin-bottom:10px" src="./media/branding-assets/upload-icon.png" alt=""><br>
+                          <button style="background-color:rgb(251, 217, 217);border-radius: 25px;border:none;padding:5px"><strong>Upload Logo</strong></button>
+                        </div>
+
+                        <div style="position:absolute;margin-left:150px; margin-top:-95px">
+                            <h4>Position</h4>
+                            <div style="margin-top:-15px">
+                              <div style="margin-left:-11px">
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">Left</label><br>
+                              </div>
+                              <div style="margin-left:10px">
+                                <input type="radio" id="css" name="fav_language" value="CSS">
+                                <label for="css">Center</label><br>
+                              </div>
+                              <div style="margin-left:0px">
+                                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                <label for="javascript">Right</label>
+                              </div>                              
+                            </div>                            
+                        </div>
+
+                        <div style="position: absolute; margin-top:30px;display:flex">
+                          <div>
+                            <small style="margin-left:35px;color:gray">Brand Color</small>
+                            <div style="display:flex;margin-left:20px">
+                              <img style="height:10px;position:absolute;margin-top:5px" src="./media/branding-assets/red-circle.png" alt="">
+                              <h5 style="position:absolute;margin-top:5px;margin-left:15px">EB248B</h5>
+                            </div>
+                          </div>
+                          <input style="position:absolute;margin-left:150px;width:100px;height:15px;margin-top:20px;border:none;background-color:rgba(128, 128, 128, 0.055);border-radius:25px" type="text" placeholder="Brand Name">                                                 
+                        </div>
+
+                        <div style="display:flex">
+                          <input style="position:absolute;width:100px;height:15px;margin-top:110px;margin-left:30px;border:none;background-color:rgba(128, 128, 128, 0.055);border-radius:25px" type="text" placeholder="Your Name">
+                          <img style="margin-top:100px; margin-left:120px; width:130px" src="./media/branding-assets/your-role.png" alt="">
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                  </div>                  
                   <div style="margin-top: -415px; margin-left: 629px" class="cross">
                     <i class="fas fa-times"></i>
                 </div>
