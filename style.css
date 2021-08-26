@@ -207,3 +207,18 @@
     width: 7%;
     height: 32px;
   }
+
+  /* Hover test  */
+  .hoverTest h5{
+    display:none;
+    margin-top:-5px;
+    margin-bottom:10px;
+    cursor:pointer;
+  }
+  .hoverTest:hover img{
+    height: 50px;
+  }
+  .hoverTest:hover h5{
+    color:red;
+    display:block;
+  }
