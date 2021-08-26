@@ -868,6 +868,7 @@
     <div class="">
           <div class="camera-permission">
             <h1>Video Library</h1>
+            <button style="position:absolute; padding:20px; background-color:rgb(255, 0, 119); border:none; border-radius:25px; margin-top:-60px; margin-left:200px; color:white; height:30px;width:80px"><span style="margin-top:-7px;margin-left:-18px;position:absolute">+Add</span></button>
             <div style="margin-top:0px; background-color: rgba(211, 211, 211, 0.205); width: 640px; height:400px; border-radius:25px">
               <div style="background-color:white; height:10px;width:540px; margin-left:10px;margin-top:10px; padding:30px; border-radius:25px">
                 <div style="display:flex; margin-top:-20px">
@@ -895,7 +896,7 @@
                   <i style="margin-left:10px" class="fas fa-angle-right"></i>
                 </div>
               </div>
-              <div style="background-color:white; height:10px;width:540px; margin-left:10px;margin-top:10px; padding:30px; border-radius:25px; cursor:pointer">
+              <div onclick="showHide(id={hide:'finishing-touches-after-video-add',show:'finishing-touches-my-video-library'})" style="background-color:white; height:10px;width:540px; margin-left:10px;margin-top:10px; padding:30px; border-radius:25px; cursor:pointer">
                 <div style="display:flex; margin-top:-20px">
                   <img style="width:50px;height:50px" src="./media/Video1.png" alt="">
                   <div style="margin-left:10px; margin-top:-15px; text-align:left">
@@ -937,6 +938,79 @@
               
 
             </div>
+              
+            <div style="margin-top: -496px; margin-left: 629px" class="cross">
+              <i class="fas fa-times"></i>
+          </div>
+          </div>
+    </div>
+</div>
+
+  <!-- Modal Finishing Touches My Video Library -->
+  <div style="display:none"class="modal-content finishing-touches-my-video-library">
+    <div class="">
+          <div class="camera-permission">
+            <h1>My Video Library</h1>
+            <button style="position:absolute; padding:20px; background-color:rgb(255, 0, 119); border:none; border-radius:25px; margin-top:-60px; margin-left:200px; color:white; height:30px;width:80px"><span style="margin-top:-7px;margin-left:-18px;position:absolute">+Add</span></button>
+            <button onclick="showHide(id={hide:'finishing-touches-my-video-library',show:'finishing-touches-after-video-add'})" style="position:absolute; padding:20px; background-color:rgba(197, 184, 190, 0.753); border:none; border-radius:25px; margin-top:-60px; margin-left:-300px; height:30px;width:80px; cursor:pointer"><span style="margin-top:-7px;margin-left:-18px;position:absolute"><i class="fas fa-angle-left"></i> Back</span></button>
+            
+               <div style="background-color: rgba(211, 211, 211, 0.205); width: 640px; height:400px; border-radius:25px;">
+                <div style="margin-left:30px; margin-top:0px; display:flex">
+                  <div style="display:flex; position: absolute; margin-left:20px;margin-top:-10px">
+                    <h5 style="color:rgba(255, 0, 170, 0.787)">Video library <span><i class="fas fa-angle-right"></i></span></h5>
+                    <h5 style="margin-left:10px; color:gray">My Video library <span><i class="fas fa-angle-right"></i></span></h5>
+                  </div>
+                  <div style="margin-top:30px; padding:10px">
+                    <div style="background-color:white; height:170px;width:170px; border-radius:25px">
+                      <img style="width:90%; margin-top:10px" src="./media/myVidLibrary/myVid1.png" alt="">
+                      <h5 style="margin-top:0px;margin-left:-10px">Video_MPGW2346</h5>
+                      <small style="color:gray; margin-top:-20px;margin-left:-64px; position:absolute">12/23/2021</small>
+                    </div>
+                  </div>
+                  <div style="margin-top:30px; padding:10px">
+                    <div style="background-color:white; height:170px;width:170px; border-radius:25px">
+                      <i style="position:absolute;color:white; margin-top:60px;margin-left:70px; font-size:20px" class="fas fa-play"></i>
+                      <img style="width:90%; margin-top:10px" src="./media/myVidLibrary/myVid2.png" alt="">
+                      <h5 style="margin-top:0px;margin-left:-10px">Video_MPGW2346</h5>
+                      <small style="color:gray; margin-top:-20px;margin-left:-64px; position:absolute">12/23/2021</small>
+                    </div>
+                  </div>
+                  <div style="margin-top:30px; padding:10px">
+                    <div style="background-color:white; height:170px;width:170px; border-radius:25px">
+                      <img style="width:90%; margin-top:10px" src="./media/myVidLibrary/myVid3.png" alt="">
+                      <h5 style="margin-top:0px;margin-left:-10px">Video_MPGW2346</h5>
+                      <small style="color:gray; margin-top:-20px;margin-left:-64px; position:absolute">12/23/2021</small>
+                    </div>
+                  </div>  
+                </div>
+
+                <div style="margin-left:30px; margin-top:-10px; display:flex">
+                  <div style="margin-top:-0px; padding:10px">
+                    <div style="background-color:white; height:170px;width:170px; border-radius:25px">
+                      <img style="width:90%; margin-top:10px" src="./media/myVidLibrary/myVid4.png" alt="">
+                      <h5 style="margin-top:0px;margin-left:-10px">Video_MPGW2346</h5>
+                      <small style="color:gray; margin-top:-20px;margin-left:-64px; position:absolute">12/23/2021</small>
+                    </div>
+                  </div>
+                  <div style="margin-top:-0px; padding:10px">
+                    <div style="background-color:white; height:170px;width:170px; border-radius:25px">
+                      <img style="width:90%; margin-top:10px" src="./media/myVidLibrary/myVid5.png" alt="">
+                      <h5 style="margin-top:0px;margin-left:-10px">Video_MPGW2346</h5>
+                      <small style="color:gray; margin-top:-20px;margin-left:-64px; position:absolute">12/23/2021</small>
+                    </div>
+                  </div>
+                  <div style="margin-top:-0px; padding:10px">
+                    <div style="background-color:white; height:170px;width:170px; border-radius:25px">
+                      <img style="width:90%; margin-top:10px" src="./media/myVidLibrary/myVid6.png" alt="">
+                      <h5 style="margin-top:0px;margin-left:-10px">Video_MPGW2346</h5>
+                      <small style="color:gray; margin-top:-20px;margin-left:-64px; position:absolute">12/23/2021</small>
+                    </div>
+                  </div>  
+                </div>
+               </div>         
+            
+            
+            
               
             <div style="margin-top: -496px; margin-left: 629px" class="cross">
               <i class="fas fa-times"></i>
