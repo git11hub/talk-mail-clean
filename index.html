@@ -614,7 +614,7 @@
                   
                   
                   <!-- <h4 style="color:lightgray; padding:10px">Insert Styles</h4> -->
-                <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'edit-video'})">Next</button>
+                <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
                 </div>
                 
               <div style="margin-top: -496px; margin-left: 629px" class="cross">
@@ -968,9 +968,9 @@
                     </div>
                   </div>
                   <div style="margin-top:30px; padding:10px">
-                    <div style="background-color:white; height:170px;width:170px; border-radius:25px">
-                      <i style="position:absolute;color:white; margin-top:60px;margin-left:70px; font-size:20px" class="fas fa-play"></i>
-                      <img style="width:90%; margin-top:10px" src="./media/myVidLibrary/myVid2.png" alt="">
+                    <div onclick="showHide(id={hide:'finishing-touches-my-video-library',show:'finishing-touches-after-image-add'})" style="background-color:white; height:170px;width:170px; border-radius:25px">
+                      <i style="position:absolute;color:white; margin-top:60px;margin-left:70px; font-size:20px; cursor:pointer" class="fas fa-play"></i>
+                      <img style="width:90%; margin-top:10px; cursor:pointer" src="./media/myVidLibrary/myVid2.png" alt="">
                       <h5 style="margin-top:0px;margin-left:-10px">Video_MPGW2346</h5>
                       <small style="color:gray; margin-top:-20px;margin-left:-64px; position:absolute">12/23/2021</small>
                     </div>
@@ -1084,28 +1084,39 @@
       <div class="">
             <div class="camera-permission">
               <h1>Insert Style</h1>
-              <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small>
+              <!-- <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small> -->
               <div style="display:flex;margin-top:50px">
               </div>
-              <video controls style="margin-top:-50px" width="300" height="300">
+              <video style="margin-top:-70px" width="300" height="300">
                 <source src="media/movie.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <div>
+                <div style="position: absolute; margin-left:190px; margin-top:-30px">
                   <small>You have applied standard style</small>
-                <!-- <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px" onclick="changeStyle()">Change</button> -->
-                <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px;cursor:pointer" onclick="showHide(id={hide:'insert-style',show:'insert-style-change'})">Change</button>
+                  <!-- <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px" onclick="changeStyle()">Change</button> -->
+                  <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px;cursor:pointer" onclick="showHide(id={hide:'insert-style',show:'insert-style-change'})">Change</button>
                 </div>
                 
 
-                <div style="display:flex;margin-top:-7px">
-                  <!-- <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="backAddFrames()">Back</button> -->
-                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'add-frames'})">Back</button>
+                <div style="display:flex; margin-top:48px;margin-left:15px; position:absolute">
+                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'finishing-touches'})">Back</button>
+                  <div style="display:flex;margin-left:200px;position:absolute; width:280px">
+                    <h4 style="padding:10px">Finalize video</h4>
+                    <i style="position:absolute; color:green; margin-top:55px; margin-left:50px" class="fas fa-check-circle"></i>
+                    <h4 style="padding:10px">Finalize insert</h4>
+                  </div>                  
+                  <div style="position:absolute;margin-top:50px;margin-left:350px">
+                    <hr style="width:10px;width:50px;border-top: 2px solid">
+                  </div>
+                  <button style="margin-top:15px;margin-left:470px; width:140px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})"><span style="position:absolute;margin-left:-50px;margin-top:-10px">Insert TalkMail</span></button>
+                </div>
+                <!-- <div style="display:flex;margin-top:-7px">
+                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'finishing-touches'})">Back</button>
                   <h4 style="padding:10px">Edit Video</h4>
                   <h4 style="padding:10px">Add Frames</h4>
                   <h4 style="padding:10px">Insert Style</h4>
-                <button style="margin-top:15px; border-radius:25px; height:50px;width:140px; background-color: rgb(250, 75, 75)" class="start-btn"><span style="margin-left:-52px;margin-top:-8px;position:absolute;">Insert TalkMail</span></button>
-                </div>
+                  <button style="margin-top:15px; border-radius:25px; height:50px;width:140px; background-color: rgb(250, 75, 75)" class="start-btn"><span style="margin-left:-52px;margin-top:-8px;position:absolute;">Insert TalkMail</span></button>
+                </div> -->
                 
               <div style="margin-top: -496px; margin-left: 629px" class="cross">
                 <i class="fas fa-times"></i>
