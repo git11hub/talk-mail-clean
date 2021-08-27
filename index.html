@@ -186,19 +186,19 @@
                     </div>
                     <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid">
                     <div style="display:flex;margin-top:50px">
-                    <div style="margin-left:40px; margin-right:10px">
-                      <img style="width:100%;cursor:pointer" src="/media/noBranding.png" alt="talk-mail type">
-                    </div>
-                    
-                    <div style="margin-right:10px">
-                      <!-- <img onclick="goToStripe1Active()" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type"> -->
-                      <img onclick="showHide(id={hide:'branding',show:'branding-stripe-1-active'})" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type">
-                    </div>
-                    
-                    <div style="margin-right:40px">
-                      <!-- <img onclick="goToStripe2Active()" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type"> -->
-                      <img onclick="showHide(id={hide:'branding',show:'branding-stripe-2-active'})" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type">
-                    </div>
+                      <div style="margin-left:40px; margin-right:10px">
+                        <img style="width:100%;cursor:pointer" src="/media/noBranding.png" alt="talk-mail type">
+                      </div>
+                      
+                      <div style="margin-right:10px">
+                        <!-- <img onclick="goToStripe1Active()" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type"> -->
+                        <img onclick="showHide(id={hide:'branding',show:'branding-stripe-1-active'})" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type">
+                      </div>
+                      
+                      <div style="margin-right:40px">
+                        <!-- <img onclick="goToStripe2Active()" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type"> -->
+                        <img onclick="showHide(id={hide:'branding',show:'branding-stripe-2-active'})" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type">
+                      </div>
                   </div>
                   </div>
                   
@@ -300,6 +300,8 @@
                       <h4>Branding Style</h4>
                       <h4 style="color:lightgray;margin-left:10px">Branding Assets</h4>
                     </div>
+                    <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid">
+                    
                     <div style="display:flex;margin-top:50px">
                     <div style="margin-left:40px; margin-right:10px">
                       <!-- <img onclick="goToBrandingFromStripe1()" style="width:100%;cursor:pointer" src="/media/noBrandingInActive.png" alt="talk-mail type"> -->
@@ -339,6 +341,8 @@
                       <h4>Branding Style</h4>
                       <h4 style="color:lightgray;margin-left:10px">Branding Assets</h4>
                     </div>
+                    <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid">
+
                     <div style="display:flex;margin-top:50px">
                     <div style="margin-left:40px; margin-right:10px">
                       <!-- <img onclick="goToBrandingFromStripe2()" style="width:100%;cursor:pointer" src="/media/noBrandingInActive.png" alt="talk-mail type"> -->
@@ -433,7 +437,7 @@
               <div style="display:flex;margin-top:50px">
                 <div style="margin-left:200px">
                   <img style="width:220px" src="/media/simpleTalkmailFull.png" alt="talk-mail type"><br>
-                  <small>You have selected simple TalkMail. <span style="color:blue">Change</span></small>
+                  <small>You have selected simple TalkMail. <span style="color:blue; cursor:pointer" onclick="showHide(id={hide:'simple-talk-mail',show:'modal-talk-mail-type'})">Change</span></small>
                   <div>
                     <!-- <div>
                       <h3>Simple TalkMail</h3>
@@ -460,7 +464,7 @@
               <div style="display:flex;margin-top:50px">
                 <div style="margin-left:200px">
                   <img style="width:220px" src="/media/selfDestructFull.png" alt="talk-mail type"><br>
-                  <small>You have selected simple TalkMail. <span style="color:blue">Change</span></small>
+                  <small>You have selected simple TalkMail. <span style="color:blue; cursor:pointer" onclick="showHide(id={hide:'self-destruct-talk-mail',show:'modal-talk-mail-type'})">Change</span></small>
                   <div>
                     <!-- <div>
                       <h3>Simple TalkMail</h3>
@@ -487,7 +491,7 @@
               <div style="display:flex;margin-top:50px">
                 <div style="margin-left:200px">
                   <img style="width:220px" src="/media/groupFeedbackFull.png" alt="talk-mail type"><br>
-                  <small>You have selected simple TalkMail. <span style="color:blue">Change</span></small>
+                  <small>You have selected simple TalkMail. <span style="color:blue; cursor:pointer" onclick="showHide(id={hide:'group-feedback-talk-mail',show:'modal-talk-mail-type'})">Change</span></small>
                   <div>
                     <!-- <div>
                       <h3>Simple TalkMail</h3>
@@ -617,7 +621,7 @@
                 <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
                 </div>
                 
-              <div style="margin-top: -496px; margin-left: 629px" class="cross">
+              <div style="margin-top: -484px; margin-left: 629px" class="cross">
                 <i class="fas fa-times"></i>
             </div>
             </div>
@@ -668,7 +672,7 @@
 
                 <div style="display:flex; margin-top:20px;margin-left:15px">
                   <!-- <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="recordNew()"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button> -->
-                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
+                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
                   <div style="display:flex;margin-left:200px;position:absolute">
                     <h4 style="padding:10px">Finalize video</h4>                    
                     <h4 style="color:lightgray; padding:10px">Finalize insert</h4>
@@ -679,10 +683,10 @@
                   
                   
                   <!-- <h4 style="color:lightgray; padding:10px">Insert Styles</h4> -->
-                <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'edit-video'})">Next</button>
+                <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'edit-video'})">Next</button>
                 </div>
                 
-              <div style="margin-top: -496px; margin-left: 629px" class="cross">
+              <div style="margin-top: -484px; margin-left: 629px" class="cross">
                 <i class="fas fa-times"></i>
             </div>
             </div>
@@ -777,7 +781,7 @@
 
               <div style="display:flex; margin-top:20px;margin-left:15px">
                 <!-- <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="recordNew()"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button> -->
-                <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
+                <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-after-text-edit',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
                 <div style="display:flex;margin-left:200px;position:absolute">
                   <h4 style="padding:10px">Finalize video</h4>                    
                   <h4 style="color:lightgray; padding:10px">Finalize insert</h4>
@@ -788,10 +792,10 @@
                 
                 
                 <!-- <h4 style="color:lightgray; padding:10px">Insert Styles</h4> -->
-              <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'edit-video'})">Next</button>
+              <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-after-text-edit',show:'insert-style'})">Next</button>
               </div>
               
-            <div style="margin-top: -496px; margin-left: 629px" class="cross">
+            <div style="margin-top: -484px; margin-left: 629px" class="cross">
               <i class="fas fa-times"></i>
           </div>
           </div>
@@ -842,7 +846,7 @@
 
               <div style="display:flex; margin-top:20px;margin-left:15px">
                 <!-- <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="recordNew()"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button> -->
-                <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
+                <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-after-image-add',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
                 <div style="display:flex;margin-left:200px;position:absolute">
                   <h4 style="padding:10px">Finalize video</h4>                    
                   <h4 style="color:lightgray; padding:10px">Finalize insert</h4>
@@ -853,10 +857,10 @@
                 
                 
                 <!-- <h4 style="color:lightgray; padding:10px">Insert Styles</h4> -->
-              <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'edit-video'})">Next</button>
+              <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-after-image-add',show:'insert-style'})">Next</button>
               </div>
               
-            <div style="margin-top: -496px; margin-left: 629px" class="cross">
+            <div style="margin-top: -484px; margin-left: 629px" class="cross">
               <i class="fas fa-times"></i>
           </div>
           </div>
@@ -939,7 +943,7 @@
 
             </div>
               
-            <div style="margin-top: -496px; margin-left: 629px" class="cross">
+            <div style="margin-top: -505px; margin-left: 629px" class="cross">
               <i class="fas fa-times"></i>
           </div>
           </div>
@@ -1009,10 +1013,7 @@
                 </div>
                </div>         
             
-            
-            
-              
-            <div style="margin-top: -496px; margin-left: 629px" class="cross">
+            <div style="margin-top: -505px; margin-left: 629px" class="cross">
               <i class="fas fa-times"></i>
           </div>
           </div>
@@ -1094,7 +1095,7 @@
                 <div style="position: absolute; margin-left:190px; margin-top:-30px">
                   <small>You have applied standard style</small>
                   <!-- <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px" onclick="changeStyle()">Change</button> -->
-                  <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px;cursor:pointer" onclick="showHide(id={hide:'insert-style',show:'insert-style-change'})">Change</button>
+                  <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px;cursor:pointer" onclick="showHide(id={hide:'insert-style',show:'after-change-button-click'})">Change</button>
                 </div>
                 
 
@@ -1118,12 +1119,173 @@
                   <button style="margin-top:15px; border-radius:25px; height:50px;width:140px; background-color: rgb(250, 75, 75)" class="start-btn"><span style="margin-left:-52px;margin-top:-8px;position:absolute;">Insert TalkMail</span></button>
                 </div> -->
                 
-              <div style="margin-top: -496px; margin-left: 629px" class="cross">
+              <div style="margin-top: -367px; margin-left: 629px; position:absolute" class="cross">
                 <i class="fas fa-times"></i>
             </div>
             </div>
       </div>
   </div>
+
+  <!-- Working Here................ -->
+  <!-- Working Here................ -->
+  <!-- Working Here................ -->
+  <!-- Working Here................ -->
+  <!-- Working Here................ -->
+
+  <!-- Modal After Change Button Click-->
+  <div style="display:none"class="modal-content after-change-button-click">
+    <div class="">
+          <div class="camera-permission">
+            <h1>Insert Style</h1>
+            <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small>
+            <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
+              <div style="display:flex; margin-left:200px">
+                <!-- <h4>Branding Style</h4> -->
+                <h4 style="color:lightgray;margin-left:10px;cursor:pointer" onclick="showHide(id={hide:'branding',show:'branding-assets'})"></h4>
+              </div>
+              <!-- <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid"> -->
+              <div style="display:flex;margin-top:50px">
+                <div style="margin-left:40px; margin-right:10px">
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:red" class="fas fa-check-circle"></i> Only Image</h4>
+                  </div>
+                    <img style="width:100%;cursor:pointer;border:3px solid red; border-radius:25px" src="/media/parsonLarge.png" alt="talk-mail type">
+                  
+                </div>
+                
+                <div style="margin-right:10px">
+                  <!-- <img onclick="goToStripe1Active()" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type"> -->
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:gray" class="far fa-circle"></i> Image with text</h4>
+                  </div>
+                  <img onclick="showHide(id={hide:'after-change-button-click',show:'after-change-button-click-2nd'})" style="width:100%;cursor:pointer" src="/media/parsonLarge.png" alt="talk-mail type">
+                  <small style="color:gray; position:absolute; width:170px; margin-left:-170px; margin-top:140px">Hello Hanna just received your proposal and ... <span style="color:rgb(255, 0, 106)">More</span></small>
+                </div>
+                
+                <div style="margin-right:40px">
+                  <!-- <img onclick="goToStripe2Active()" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type"> -->
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:gray" class="far fa-circle"></i> Image text & play icon</h4>
+                  </div>
+                  <img onclick="showHide(id={hide:'after-change-button-click',show:'after-change-button-click-3rd'})" style="width:100%;cursor:pointer" src="/media/parsonLarge.png" alt="talk-mail type">
+                  <small style="color:gray; position:absolute; width:170px; margin-left:-170px; margin-top:140px">Hello Hanna just received your proposal and ... <span style="color:rgb(255, 0, 106)">More</span></small>
+                </div>
+            </div>
+            </div>
+            
+            <div style="margin-top: -415px; margin-left: 629px" class="cross">
+              <i class="fas fa-times"></i>
+          </div>
+          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingCancelToFirstSection()">Cancel</button> -->
+          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'after-change-button-click',show:'insert-style'})">Cancel</button>
+          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingSaveToFirstSection()">Save</button> -->
+          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'after-change-button-click',show:'insert-style'})">Save</button>
+          </div>
+    </div>
+</div>
+  <!-- Modal After Change Button Click 2nd-->
+  <div style="display:none"class="modal-content after-change-button-click-2nd">
+    <div class="">
+          <div class="camera-permission">
+            <h1>Insert Style</h1>
+            <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small>
+            <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
+              <div style="display:flex; margin-left:200px">
+                <!-- <h4>Branding Style</h4> -->
+                <h4 style="color:lightgray;margin-left:10px;cursor:pointer" onclick="showHide(id={hide:'branding',show:'branding-assets'})"></h4>
+              </div>
+              <!-- <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid"> -->
+              <div style="display:flex;margin-top:50px">
+                <div style="margin-left:40px; margin-right:10px">
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:gray" class="far fa-circle"></i></i> Only Image</h4>
+                  </div>
+                    <img onclick="showHide(id={hide:'after-change-button-click-2nd',show:'after-change-button-click'})" style="width:100%;cursor:pointer" src="/media/parsonLarge.png" alt="talk-mail type">
+                  
+                </div>
+                
+                <div style="margin-right:10px">
+                  <!-- <img onclick="goToStripe1Active()" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type"> -->
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:red" class="fas fa-check-circle"></i></i> Image with text</h4>
+                  </div>
+                  <img style="width:100%;cursor:pointer;border:3px solid red; border-radius:25px" src="/media/parsonLarge.png" alt="talk-mail type">
+                  <small style="color:gray; position:absolute; width:170px; margin-left:-80px; margin-top:0px">Hello Hanna just received your proposal and ... <span style="color:rgb(255, 0, 106)">More</span></small>
+                </div>
+                
+                <div style="margin-right:40px">
+                  <!-- <img onclick="goToStripe2Active()" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type"> -->
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:gray" class="far fa-circle"></i> Image text & play icon</h4>
+                  </div>
+                  <img onclick="showHide(id={hide:'after-change-button-click-2nd',show:'after-change-button-click-3rd'})" style="width:100%;cursor:pointer" src="/media/parsonLarge.png" alt="talk-mail type">
+                  <small style="color:gray; position:absolute; width:170px; margin-left:-170px; margin-top:140px">Hello Hanna just received your proposal and ... <span style="color:rgb(255, 0, 106)">More</span></small>
+                </div>
+            </div>
+            </div>
+            
+            <div style="margin-top: -415px; margin-left: 629px" class="cross">
+              <i class="fas fa-times"></i>
+          </div>
+          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingCancelToFirstSection()">Cancel</button> -->
+          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'after-change-button-click-2nd',show:'insert-style'})">Cancel</button>
+          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingSaveToFirstSection()">Save</button> -->
+          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'after-change-button-click-2nd',show:'insert-style'})">Save</button>
+          </div>
+    </div>
+</div>
+  <!-- Modal After Change Button Click 3rd-->
+  <div style="display:none"class="modal-content after-change-button-click-3rd">
+    <div class="">
+          <div class="camera-permission">
+            <h1>Insert Style</h1>
+            <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small>
+            <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
+              <div style="display:flex; margin-left:200px">
+                <!-- <h4>Branding Style</h4> -->
+                <h4 style="color:lightgray;margin-left:10px;cursor:pointer" onclick="showHide(id={hide:'branding',show:'branding-assets'})"></h4>
+              </div>
+              <!-- <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid"> -->
+              <div style="display:flex;margin-top:50px">
+                <div style="margin-left:40px; margin-right:10px">
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:gray" class="far fa-circle"></i></i> Only Image</h4>
+                  </div>
+                    <img onclick="showHide(id={hide:'after-change-button-click-3rd',show:'after-change-button-click'})" style="width:100%;cursor:pointer" src="/media/parsonLarge.png" alt="talk-mail type">
+                  
+                </div>
+                
+                <div style="margin-right:10px">
+                  <!-- <img onclick="goToStripe1Active()" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type"> -->
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:gray" class="far fa-circle"></i></i> Image with text</h4>
+                  </div>
+                  <img onclick="showHide(id={hide:'after-change-button-click-3rd',show:'after-change-button-click-2nd'})" style="width:100%;cursor:pointer" src="/media/parsonLarge.png" alt="talk-mail type">
+                  <small style="color:gray; position:absolute; width:170px; margin-left:-170px; margin-top:140px">Hello Hanna just received your proposal and ... <span style="color:rgb(255, 0, 106)">More</span></small>
+                </div>
+                
+                <div style="margin-right:40px">
+                  <!-- <img onclick="goToStripe2Active()" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type"> -->
+                  <div style="display:flex; position:absolute; margin-top:-50px;margin-left:0px">
+                    <h4><i style="color:red" class="fas fa-check-circle"></i> Image text & play icon</h4>
+                  </div>
+                  <img style="width:100%;cursor:pointer;border:3px solid red; border-radius:25px" src="/media/parsonLarge.png" alt="talk-mail type">
+                  <small style="color:gray; position:absolute; width:170px; margin-left:-80px; margin-top:0px">Hello Hanna just received your proposal and ... <span style="color:rgb(255, 0, 106)">More</span></small>
+                </div>
+            </div>
+            </div>
+            
+            <div style="margin-top: -415px; margin-left: 629px" class="cross">
+              <i class="fas fa-times"></i>
+          </div>
+          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingCancelToFirstSection()">Cancel</button> -->
+          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'after-change-button-click-3rd',show:'insert-style'})">Cancel</button>
+          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="brandingSaveToFirstSection()">Save</button> -->
+          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'after-change-button-click-3rd',show:'insert-style'})">Save</button>
+          </div>
+    </div>
+</div>
+  
 
   <!-- Modal Insert Style Change -->
   <div style="display:none"class="modal-content insert-style-change">
